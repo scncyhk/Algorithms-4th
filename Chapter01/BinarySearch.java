@@ -11,7 +11,8 @@ public class BinarySearch
     {
         int low = 0;
         int hig = a.length - 1;
-        while(low <= hig) {
+        while(low <= hig) 
+        {
             int mid = low + (hig - low) / 2;
             if(key < a[mid])
                 hig = mid - 1;
@@ -27,7 +28,8 @@ public class BinarySearch
     {
         int[] whitelist = In.readInts(args[0]);
         Arrays.sort(whitelist);
-        while(!StdIn.isEmpty()) {
+        while(!StdIn.isEmpty()) 
+        {
             int key = StdIn.readInt();
             if(rank(key,whitelist) < 0)
                 StdOut.println(key);
